@@ -38,47 +38,42 @@ class Login extends React.Component{
 
     render(){
         return (
-
-            <div className="row">
-                <div className="col-md-6 offset-md-3">
+            <div className="row justify-content-center">
+                <div className="col-md-8">
                     <div className="bs-docs-section">
                         <Card title="Login">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="bs-component">
-                                        <fieldset>
-                                            <FormGroup label="CPF: *" htmlFor="exampleInputCpf1">
-                                                <input type="cpf" 
-                                                    value={this.state.cpf}
-                                                    onChange={e => this.setState({cpf: e.target.value})}
-                                                    className="form-control" 
-                                                    id="exampleInputCpf1" 
-                                                    aria-describedby="cpfHelp" 
-                                                    placeholder="Digite o CPF" />
-                                            </FormGroup>
-                                            <FormGroup label="Senha: *" htmlFor="exampleInputSenha1">
-                                                <input type="senha" 
-                                                        value={this.state.senha}
-                                                        onChange={e => this.setState({senha: e.target.value})}
-                                                        className="form-control" 
-                                                        id="exampleInputSenha1" 
-                                                        placeholder="Senha" />
-                                            </FormGroup>
-                                            <button onClick={this.entrar} className="btn btn-success">
-                                                <i className="pi pi-sign-in"></i>Entrar</button>
-                                            <button onClick={this.prepareCadastrar} 
-                                                    className="btn btn-danger">
-                                                    <i className="pi pi-plus"></i>  Primeiro Acesso?
-                                            </button>
-                                        </fieldset>
-                                    </div>
+                            <div className="bs-component">
+                                <FormGroup label="CPF: *" htmlFor="exampleInputCpf1">
+                                    <input type="text"
+                                           value={this.state.cpf}
+                                           onChange={e => this.setState({cpf: e.target.value})}
+                                           className="form-control"
+                                           id="exampleInputCpf1"
+                                           aria-describedby="cpfHelp"
+                                           placeholder="Digite o CPF" />
+                                </FormGroup>
+                                <FormGroup label="Senha: *" htmlFor="exampleInputSenha1">
+                                    <input type="password"
+                                           value={this.state.senha}
+                                           onChange={e => this.setState({senha: e.target.value})}
+                                           className="form-control"
+                                           id="exampleInputSenha1"
+                                           placeholder="Senha" />
+                                </FormGroup>
+
+                                <div className="btn-content">
+                                    <button onClick={this.entrar} className="btn btn-bgcolor-primary">
+                                        <i className="pi pi-sign-in"></i> Entrar
+                                    </button>
+                                    <button onClick={this.prepareCadastrar} className="btn btn-bgcolor-secondary">
+                                        <i className="pi pi-plus"></i> Primeiro Acesso?
+                                    </button>
                                 </div>
                             </div>
                         </Card>
                     </div>
                 </div>
             </div>
-
         )
     }
 }
