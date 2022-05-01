@@ -130,4 +130,6 @@ body { margin: 137px 0 60px; }
     gap: 10px
 }
 
-/************ LANDING PAGE ************/
+.navbar .nav-item { border-bottom: 1px solid #650199; }
+.navbar .nav-item:hover { padding: 0 15px; }
+.navbar .nav-link { color: #650199; }

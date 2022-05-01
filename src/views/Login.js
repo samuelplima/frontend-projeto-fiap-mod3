@@ -50,6 +50,7 @@ class Login extends React.Component{
                                            className="form-control"
                                            id="exampleInputCpf1"
                                            aria-describedby="cpfHelp"
+                                           maxLength="11"
                                            placeholder="Digite o CPF" />
                                 </FormGroup>
                                 <FormGroup label="Senha: *" htmlFor="exampleInputSenha1">

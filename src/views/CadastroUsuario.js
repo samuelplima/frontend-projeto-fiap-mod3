@@ -68,15 +68,15 @@ class CadastroUsuario extends React.Component{
                                            name="email"
                                            onChange={e => this.setState({email: e.target.value})} />
                                 </FormGroup>
-                                <FormGroup label="CPF: *(Por favor digite utlilizando a máscara)" htmlFor="inputCpf">
+                                <FormGroup label="CPF: * (sem formatação)" htmlFor="inputCpf">
                                     <input type="text"
                                            id="inputCpf"
                                            className="form-control"
                                            name="cpf"
-                                           maxLength="14"
+                                           maxLength="11"
                                            onChange={e => this.setState({cpf: e.target.value})} />
                                 </FormGroup>
-                                <FormGroup label="Telefone: *" htmlFor="inputTelefone">
+                                <FormGroup label="Telefone: * (sem formatação)" htmlFor="inputTelefone">
                                     <input type="phone"
                                            id="inputTelefone"
                                            className="form-control"

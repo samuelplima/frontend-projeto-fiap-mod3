@@ -12,17 +12,15 @@ class Home extends React.Component{
 
     render(){
         return (
-            <div className="jumbotron">
-                <h1 className="style-title style-title-h1">Olá!</h1>
-                <h2 className="lead">Parabéns você está logado</h2>
-                <hr className="my-4" />
-                <p className="style-text-default">Deseja cadastrar dependentes?</p>
-                <p className="lead">
-                    <a className="btn btn-primary btn-lg" href="/cadastro-usuarios" role="button">
-                        <i className="pi pi-users"></i>
-                        Cadastrar Dependentes
-                    </a>
-                </p>
+            <div className="row justify-content-center">
+                <div className="col-md-8">
+                    <div className="jumbotron">
+                        <div className="bs-docs-section">
+                            <h1 className="style-title style-title-h1">Olá!</h1>
+                            <h2 className="lead">Parabéns você está logado</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
